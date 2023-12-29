@@ -99,8 +99,8 @@ article a {
     color: hsl(210, 10%, 33%);
     padding: 10px;
 }
-i {
-    width: 100px;
+.social {
+    justify-self: end;
 }
 article a:hover {
     color: hsl(171, 66%, 44%);
@@ -111,4 +111,58 @@ article a:hover {
     bottom: 10px;
     transform: translate(-50%,0);
     left: 50%;
+}
+@media (max-width: 600px) {
+    body {
+        width: auto;
+        background: url(images/bg-header-mobile.png) no-repeat;
+        background-size: contain;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+
+    }
+    button {
+        width: 90%;
+
+    }
+    .device-img {
+        width: 90vw;
+    }
+    secton {
+        display: flex;
+        flex-direction: column;
+    }
+    .device {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .device article {
+        margin: 0;
+        margin-top: 20px;
+    }
+    .article {
+        flex-direction: column;
+    }
+    .logos {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        row-gap: 50px;
+        justify-items: center;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin: 0;
+    }
+    .attribution {
+        text-align: center;
+        position: relative;
+    }
 }
