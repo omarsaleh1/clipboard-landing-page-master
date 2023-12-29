@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Bai Jamjuree';
+    font-size: 18px;
+    background: url(images/bg-header-desktop.png) no-repeat;
+    background-size: contain;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5,auto);
+    row-gap: 100px;
+    text-align: center;
+    text-wrap: balance;
+}
+h {
+    font-weight: 600;
+    margin-top: 20px;
+}
+p {
+    font-weight: 400;
+    color: hsl(201, 11%, 66%);
+    margin-top: 10px;
+}
+.first {
+    margin-top: 100px;
+}
+.first article {
+    margin: 50px;
+}
+button {
+    padding: 10px;
+    border-radius: 30px;
+    color: white;
+    border: rgba(0, 0, 0, 0.142) solid 1px;
+    font-family: 'Bai Jamjuree';
+    box-shadow: rgba(0, 0, 0, 0.507) 2px 2px 4px;
+    margin-top: 30px;
+}
+.ios {
+    background-color: hsl(171, 66%, 44%);
+}
+.ios:hover {
+    background-color: hsla(171, 66%, 44%, 0.518);
+    cursor: pointer;
+}
+.mac {
+    background-color: hsl(233, 100%, 69%);
+}
+.mac:hover {
+    background-color: hsla(233, 100%, 69%, 0.503);
+    cursor: pointer;
+}
+.device {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 20px;
+    text-align: left;
+}
+.article {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.device article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 50px;
+}
+.logos {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    justify-content: space-evenly;
+}
+section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+footer {
+    background-color: hsla(202, 11%, 66%, 0.482);
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    padding: 50px;
+    padding-left: 100px;
+}
+.logo {
+    width: 50px;
+}
+article a {
+    text-decoration: none;
+    color: hsl(210, 10%, 33%);
+    padding: 10px;
+}
+i {
+    width: 100px;
+}
+article a:hover {
+    color: hsl(171, 66%, 44%);
+}
+.attribution {
+    color: black;
+    position: fixed;
+    bottom: 10px;
+    transform: translate(-50%,0);
+    left: 50%;
+}
